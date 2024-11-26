@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min css">
+    <link rel="icon" href="./assets/converter.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h2 id="title">Currency Converter</h2>
+      </div>
+
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input class="input" type="text" value="1" />
+      </div>
+
+      <div class="converter">
+        <div class="from">
+          <p>From</p>
+          <img src="https://flagsapi.com/US/flat/64.png" class="flag" />
+          <select class="selectOption" value="USD"></select>
+        </div>
+
+        <div class="convertImg">
+          <img src="./assets/exchange.png" id="exchangeImg" />
+        </div>
+
+        <div class="to">
+          <p>To</p>
+          <img src="https://flagsapi.com/IN/flat/64.png" class="flag" />
+          <select class="selectOption" value="INR"></select>
+        </div>
+      </div>
+
+      <div class="output">
+        <p>Getting Exchange Rate...</p>
+      </div>
+
+      <div class="exchangeButton">
+        <button class="exchangeButton">Get Exchange Rate</button>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
